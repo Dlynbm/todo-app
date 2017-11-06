@@ -4,9 +4,11 @@ var addTaskBtn = document.querySelector('#addTask');
 var toDoUl = document.querySelector(".todo-list ul");
 var completeUl =  document.querySelector(".complete-list ul");
 
+
+
+
 //create the task list item
 var createNewTask = function(task){
-
 
     //set up the new list item
     var listItem = document.createElement("li");
@@ -43,12 +45,20 @@ var addTask = function(){
     bindIncompleteItems(listItem, completeTask);
 };
 
+document.getElementById("new-task")
+    .addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("addTask").click();
+        }
+    });
+
 var completeTask = function(){
 
     //grabs the checkbox's parent element, the li it's in
     var listItem = this.parentNode;
 
-    //create and insert the delet button
+    //create and insert the delete button
     var deleteBtn = document.createElement("button");
 
     //button
@@ -121,4 +131,8 @@ function initDate() {
     var dtString = dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate();
     document.getElementById("Date"). innerHTML = dtString;
 }
+
+
+
+
 

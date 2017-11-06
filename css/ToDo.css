@@ -1,7 +1,6 @@
 body {
     font-size: 20px;
 
-
 }
 section {
     width:100%;
@@ -21,9 +20,17 @@ header{
     background-color: rgba(248, 202, 77, 0.5);
     margin: auto;
     margin-bottom: 30px;
+    border-radius: 5px;
+    width:50%;
 }
-h1 {
+
+header {
     text-align: center;
+
+}
+.navbar-text h1{
+    color:black;
+
 }
 
 #Date {
@@ -32,10 +39,14 @@ h1 {
     text-align: center;
 }
 
+#quote {
+    text-align: center;
+}
 .new-todo {
     display: flex;
     flex-direction: column;
     background-color: rgba(232, 137, 144, 0.7);
+    /*color: rgb(232, 137, 144);*/
     width:30%;
     justify-content: space-around;
     align-items: center;
