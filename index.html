@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>ToDo App</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/ToDo.css">
 
 </head>
 <body><img src ="Images/Roses.png">
 <header>
 
-          <h1>My To-Do List</h1></div>
+          <h1>My To-Do List</h1>
 
 <div id="Date"></div>
 </header>
@@ -29,11 +29,12 @@
 
     <div class = "todo-list box">
 
-        <h2>My To-Do List</h2>
+        <h2>Unfinished Tasks</h2>
 
-        <ul id="incomplete-tasks">
-            <li><input type = "checkbox"><label>Get Milk</label></li>
-            <li><input type = "checkbox"><label>Pay Doctor</label></li>
+        <ul>
+            <li><input type = "checkbox"><label>Fold Laundry</label><button class =             "unFinishedDelete">Delete</button></li></li>
+            <li><input type = "checkbox"><label>Get Milk</label><button class = "unFinishedDelete">Delete</button></li></li>
+            <li><input type = "checkbox"><label>Pay Doctor</label><button class = "unFinishedDelete">Delete</button></li>
         </ul>
     </div>
 
@@ -46,11 +47,8 @@
     </div>
 </section>
 
-<div id = "quote"></div>
-
-
 
 <script src="js/ToDo.js"></script>
-<script src="js/Quotes.js"></script>
+
 </body>
 </html>

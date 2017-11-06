@@ -123,6 +123,7 @@ for (var i=0; i < completeUl.children.length; i++) {
 addTaskBtn.addEventListener("click", addTask);
 
 
+
 window.onload = initDate;
 function initDate() {
     var dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
