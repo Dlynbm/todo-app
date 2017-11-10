@@ -14,16 +14,26 @@ $(document).ready(function() {
 
     }
 
-    function deleteItem(){
+
+    //adds focus and blur to text entry box
+    $("input").focus(function() {
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+
+    function deleteItem() {
         //chooses the ul and removes when you click on trash
         $(this).parent().remove();
 
     }
 
     function completeItem(){
-    //chooses the ul parent and markes done
+    //chooses the ul parent and marks done
         $(this).parent().toggleClass('done');
     }
+
 });
 
 
