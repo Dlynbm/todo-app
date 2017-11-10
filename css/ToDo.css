@@ -1,7 +1,15 @@
-.done {
-    text-decoration: line-through;
-    opacity:0.5;
 
+
+h1 {
+    background-color: peachpuff;
+    border-radius: 5px;
+    text-align: center;
+    font-size:50px;
+}
+
+.done {
+    opacity:0.5;
+    text-decoration: line-through;
 }
 
 #todos {
@@ -10,19 +18,47 @@
     padding: 0;
 
 }
+label{
+    cursor: pointer;
+}
 
-#todos ul{
+#todos li{
     padding: 20px 0px 20px 0px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid white;
 }
 
 .deleteItem {
     float:right;
-    color: red;
+    color: black;
     cursor:pointer;
+}
 
+.glyphicon{
+    font-size: 20px;
+}
+
+
+.glyphicon:hover{
+    font-size:25px;
 }
 
 input[type=checkbox] {
     margin-right: 15px;
+    cursor: pointer;
 }
+
+.container {
+    background-color: rgba(87, 171, 27, 0.5);
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+#addItem {
+    background-color: rgb(232, 202, 97);
+}
+
+
+
+
